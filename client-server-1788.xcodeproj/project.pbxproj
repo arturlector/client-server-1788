@@ -9,23 +9,27 @@
 /* Begin PBXBuildFile section */
 		123CA3F6275FD15300E647C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123CA3F5275FD15300E647C1 /* AppDelegate.swift */; };
 		123CA3F8275FD15300E647C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123CA3F7275FD15300E647C1 /* SceneDelegate.swift */; };
-		123CA3FA275FD15300E647C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123CA3F9275FD15300E647C1 /* ViewController.swift */; };
+		123CA3FA275FD15300E647C1 /* SendCashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123CA3F9275FD15300E647C1 /* SendCashViewController.swift */; };
 		123CA3FD275FD15300E647C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 123CA3FB275FD15300E647C1 /* Main.storyboard */; };
 		123CA3FF275FD15500E647C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 123CA3FE275FD15500E647C1 /* Assets.xcassets */; };
 		123CA402275FD15500E647C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 123CA400275FD15500E647C1 /* LaunchScreen.storyboard */; };
 		123CA40E275FD21300E647C1 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123CA40D275FD21300E647C1 /* Account.swift */; };
+		123CA410275FD64A00E647C1 /* DetailCashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123CA40F275FD64A00E647C1 /* DetailCashViewController.swift */; };
+		123CA412275FE12700E647C1 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123CA411275FE12700E647C1 /* ContactsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		123CA3F2275FD15300E647C1 /* client-server-1788.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "client-server-1788.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		123CA3F5275FD15300E647C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		123CA3F7275FD15300E647C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		123CA3F9275FD15300E647C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		123CA3F9275FD15300E647C1 /* SendCashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendCashViewController.swift; sourceTree = "<group>"; };
 		123CA3FC275FD15300E647C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		123CA3FE275FD15500E647C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		123CA401275FD15500E647C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		123CA403275FD15500E647C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		123CA40D275FD21300E647C1 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		123CA40F275FD64A00E647C1 /* DetailCashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCashViewController.swift; sourceTree = "<group>"; };
+		123CA411275FE12700E647C1 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +100,10 @@
 		123CA40C275FD1FD00E647C1 /* Lesson-1 */ = {
 			isa = PBXGroup;
 			children = (
-				123CA3F9275FD15300E647C1 /* ViewController.swift */,
+				123CA3F9275FD15300E647C1 /* SendCashViewController.swift */,
+				123CA40F275FD64A00E647C1 /* DetailCashViewController.swift */,
 				123CA40D275FD21300E647C1 /* Account.swift */,
+				123CA411275FE12700E647C1 /* ContactsViewController.swift */,
 			);
 			path = "Lesson-1";
 			sourceTree = "<group>";
@@ -173,8 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				123CA3FA275FD15300E647C1 /* ViewController.swift in Sources */,
+				123CA412275FE12700E647C1 /* ContactsViewController.swift in Sources */,
+				123CA3FA275FD15300E647C1 /* SendCashViewController.swift in Sources */,
 				123CA40E275FD21300E647C1 /* Account.swift in Sources */,
+				123CA410275FD64A00E647C1 /* DetailCashViewController.swift in Sources */,
 				123CA3F6275FD15300E647C1 /* AppDelegate.swift in Sources */,
 				123CA3F8275FD15300E647C1 /* SceneDelegate.swift in Sources */,
 			);
