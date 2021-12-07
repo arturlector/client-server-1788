@@ -7,3 +7,22 @@
 
 import Foundation
 
+final class Account {
+    
+    private init() {}
+    
+    //Единственный экземпляр который висит в статической памяти
+    static let shared = Account()
+    
+    var name: String = ""
+    var cash: Int = 0
+    
+//    var name1: String {
+//        get {
+//            Keychain(name)
+//        }
+//        set {
+//            Keychaine(name) = newValue
+//        }
+//    }
+}
