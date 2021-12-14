@@ -16,10 +16,8 @@ class AuthViewController: UIViewController, WKNavigationDelegate {
         }
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         authorizeToVK()
     }
     
@@ -56,7 +54,6 @@ class AuthViewController: UIViewController, WKNavigationDelegate {
         //https://oauth.vk.com/blank.html#access_token=b291beab60edaf11cc10704cc2937ac1db857a7e4d5aa508df1d1784e01142811e9e1c18ab53425dd534c&expires_in=86400&user_id=223761261
         
         //[access_token, b291beab60edaf11cc10704cc2937ac1db857a7e4d5aa508df1d1784e01142811e9e1c18ab53425dd534c, expires_in, 86400, user_id, 223761261]
-        
         //[:]
         
         let params = fragment
@@ -75,12 +72,10 @@ class AuthViewController: UIViewController, WKNavigationDelegate {
         Session.shared.token = token
         Session.shared.userId = userId
         
-        performSegue(withIdentifier: "showFriendsSegue", sender: nil)
-        
+        performSegue(withIdentifier: "showTabBarSegue", sender: nil)
         print(url)
         
         decisionHandler(.cancel)
-        
     }
     
     
