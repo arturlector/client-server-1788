@@ -20,6 +20,16 @@
 		123CA4572763CEA200E647C1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 123CA4562763CEA200E647C1 /* Alamofire */; };
 		123CA45A2763D27A00E647C1 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123CA4592763D27A00E647C1 /* AuthViewController.swift */; };
 		123CA45D2763D83800E647C1 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123CA45C2763D83800E647C1 /* Session.swift */; };
+		12C83B7B2769098C0093EC66 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C83B7A2769098C0093EC66 /* FriendsViewController.swift */; };
+		12C83B7F276909B50093EC66 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C83B7E276909B50093EC66 /* PhotosViewController.swift */; };
+		12C83B8227690AD20093EC66 /* FriendsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C83B8127690AD20093EC66 /* FriendsAPI.swift */; };
+		12C83B85276911130093EC66 /* Data+PrettyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C83B84276911130093EC66 /* Data+PrettyJSON.swift */; };
+		12C83B88276912640093EC66 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C83B87276912640093EC66 /* Friend.swift */; };
+		12C83B8B2769155E0093EC66 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 12C83B8A2769155E0093EC66 /* SDWebImage */; };
+		12C83B8E276916720093EC66 /* FriendsDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C83B8D276916720093EC66 /* FriendsDB.swift */; };
+		12C83B91276918370093EC66 /* FriendManual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C83B90276918370093EC66 /* FriendManual.swift */; };
+		12C83B9327691A6F0093EC66 /* FriendDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C83B9227691A6E0093EC66 /* FriendDTO.swift */; };
+		12C83B9627691B530093EC66 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 12C83B9527691B530093EC66 /* SwiftyJSON */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +47,14 @@
 		123CA4532763C57C00E647C1 /* NetworkingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingViewController.swift; sourceTree = "<group>"; };
 		123CA4592763D27A00E647C1 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		123CA45C2763D83800E647C1 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		12C83B7A2769098C0093EC66 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		12C83B7E276909B50093EC66 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		12C83B8127690AD20093EC66 /* FriendsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsAPI.swift; sourceTree = "<group>"; };
+		12C83B84276911130093EC66 /* Data+PrettyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+PrettyJSON.swift"; sourceTree = "<group>"; };
+		12C83B87276912640093EC66 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		12C83B8D276916720093EC66 /* FriendsDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsDB.swift; sourceTree = "<group>"; };
+		12C83B90276918370093EC66 /* FriendManual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendManual.swift; sourceTree = "<group>"; };
+		12C83B9227691A6E0093EC66 /* FriendDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12C83B9627691B530093EC66 /* SwiftyJSON in Frameworks */,
+				12C83B8B2769155E0093EC66 /* SDWebImage in Frameworks */,
 				123CA4572763CEA200E647C1 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -131,6 +151,7 @@
 			children = (
 				123CA45E2763D86E00E647C1 /* Modules */,
 				123CA45B2763D82700E647C1 /* Services */,
+				12C83B83276910EC0093EC66 /* Extension */,
 			);
 			path = "vk-api";
 			sourceTree = "<group>";
@@ -139,6 +160,8 @@
 			isa = PBXGroup;
 			children = (
 				123CA45C2763D83800E647C1 /* Session.swift */,
+				12C83B8F276916760093EC66 /* Database */,
+				12C83B8C276916600093EC66 /* API */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -146,9 +169,71 @@
 		123CA45E2763D86E00E647C1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				123CA4592763D27A00E647C1 /* AuthViewController.swift */,
+				12C83B7C276909980093EC66 /* Auth */,
+				12C83B7D2769099F0093EC66 /* Friends */,
+				12C83B80276909BA0093EC66 /* Photos */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		12C83B7C276909980093EC66 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				123CA4592763D27A00E647C1 /* AuthViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		12C83B7D2769099F0093EC66 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				12C83B7A2769098C0093EC66 /* FriendsViewController.swift */,
+				12C83B86276912560093EC66 /* Models */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		12C83B80276909BA0093EC66 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				12C83B7E276909B50093EC66 /* PhotosViewController.swift */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		12C83B83276910EC0093EC66 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				12C83B84276911130093EC66 /* Data+PrettyJSON.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		12C83B86276912560093EC66 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				12C83B87276912640093EC66 /* Friend.swift */,
+				12C83B90276918370093EC66 /* FriendManual.swift */,
+				12C83B9227691A6E0093EC66 /* FriendDTO.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		12C83B8C276916600093EC66 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				12C83B8127690AD20093EC66 /* FriendsAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		12C83B8F276916760093EC66 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				12C83B8D276916720093EC66 /* FriendsDB.swift */,
+			);
+			name = Database;
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +254,8 @@
 			name = "client-server-1788";
 			packageProductDependencies = (
 				123CA4562763CEA200E647C1 /* Alamofire */,
+				12C83B8A2769155E0093EC66 /* SDWebImage */,
+				12C83B9527691B530093EC66 /* SwiftyJSON */,
 			);
 			productName = "client-server-1788";
 			productReference = 123CA3F2275FD15300E647C1 /* client-server-1788.app */;
@@ -200,6 +287,8 @@
 			mainGroup = 123CA3E9275FD15300E647C1;
 			packageReferences = (
 				123CA4552763CEA200E647C1 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				12C83B892769155E0093EC66 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				12C83B9427691B530093EC66 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 			);
 			productRefGroup = 123CA3F3275FD15300E647C1 /* Products */;
 			projectDirPath = "";
@@ -228,14 +317,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12C83B8E276916720093EC66 /* FriendsDB.swift in Sources */,
 				123CA412275FE12700E647C1 /* ContactsViewController.swift in Sources */,
+				12C83B9327691A6F0093EC66 /* FriendDTO.swift in Sources */,
+				12C83B88276912640093EC66 /* Friend.swift in Sources */,
+				12C83B91276918370093EC66 /* FriendManual.swift in Sources */,
+				12C83B7F276909B50093EC66 /* PhotosViewController.swift in Sources */,
 				123CA4542763C57C00E647C1 /* NetworkingViewController.swift in Sources */,
 				123CA3FA275FD15300E647C1 /* SendCashViewController.swift in Sources */,
+				12C83B8227690AD20093EC66 /* FriendsAPI.swift in Sources */,
 				123CA40E275FD21300E647C1 /* Account.swift in Sources */,
 				123CA45A2763D27A00E647C1 /* AuthViewController.swift in Sources */,
 				123CA410275FD64A00E647C1 /* DetailCashViewController.swift in Sources */,
+				12C83B7B2769098C0093EC66 /* FriendsViewController.swift in Sources */,
 				123CA3F6275FD15300E647C1 /* AppDelegate.swift in Sources */,
 				123CA3F8275FD15300E647C1 /* SceneDelegate.swift in Sources */,
+				12C83B85276911130093EC66 /* Data+PrettyJSON.swift in Sources */,
 				123CA45D2763D83800E647C1 /* Session.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,6 +563,22 @@
 				minimumVersion = 5.4.4;
 			};
 		};
+		12C83B892769155E0093EC66 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.12.1;
+			};
+		};
+		12C83B9427691B530093EC66 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -473,6 +586,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 123CA4552763CEA200E647C1 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		12C83B8A2769155E0093EC66 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 12C83B892769155E0093EC66 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		12C83B9527691B530093EC66 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 12C83B9427691B530093EC66 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
