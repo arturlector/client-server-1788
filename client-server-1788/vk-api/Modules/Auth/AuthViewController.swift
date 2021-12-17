@@ -18,6 +18,12 @@ class AuthViewController: UIViewController, WKNavigationDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //TODO: - Текущую сравнить с датой в expiresIn
+        if !Session.shared.token.isEmpty, Session.shared.userId > 0 {
+            performSegue(withIdentifier: "showTabBarSegue", sender: nil)
+        }
+        
         authorizeToVK()
     }
     
@@ -70,7 +76,7 @@ class AuthViewController: UIViewController, WKNavigationDelegate {
         guard let token = params["access_token"], let userId = params["user_id"] else { return }
         
         Session.shared.token = token
-        Session.shared.userId = userId
+        Session.shared.userId = Int(userId) ?? 0
         
         performSegue(withIdentifier: "showTabBarSegue", sender: nil)
         print(url)

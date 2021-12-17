@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12208A0B276CFD4C00175109 /* StorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12208A0A276CFD4C00175109 /* StorageViewController.swift */; };
+		12208A0E276CFF7E00175109 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 12208A0D276CFF7E00175109 /* Alamofire */; };
+		12208A11276D00A000175109 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 12208A10276D00A000175109 /* SwiftKeychainWrapper */; };
+		12208A37276D07DE00175109 /* humandb.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 12208A35276D07DE00175109 /* humandb.xcdatamodeld */; };
+		12208A3A276D088400175109 /* Human+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12208A38276D088400175109 /* Human+CoreDataClass.swift */; };
+		12208A3B276D088400175109 /* Human+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12208A39276D088400175109 /* Human+CoreDataProperties.swift */; };
+		12208A3E276D0BE800175109 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 12208A3D276D0BE800175109 /* RealmSwift */; };
 		123CA3F6275FD15300E647C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123CA3F5275FD15300E647C1 /* AppDelegate.swift */; };
 		123CA3F8275FD15300E647C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123CA3F7275FD15300E647C1 /* SceneDelegate.swift */; };
 		123CA3FA275FD15300E647C1 /* SendCashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123CA3F9275FD15300E647C1 /* SendCashViewController.swift */; };
@@ -17,7 +24,6 @@
 		123CA410275FD64A00E647C1 /* DetailCashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123CA40F275FD64A00E647C1 /* DetailCashViewController.swift */; };
 		123CA412275FE12700E647C1 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123CA411275FE12700E647C1 /* ContactsViewController.swift */; };
 		123CA4542763C57C00E647C1 /* NetworkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123CA4532763C57C00E647C1 /* NetworkingViewController.swift */; };
-		123CA4572763CEA200E647C1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 123CA4562763CEA200E647C1 /* Alamofire */; };
 		123CA45A2763D27A00E647C1 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123CA4592763D27A00E647C1 /* AuthViewController.swift */; };
 		123CA45D2763D83800E647C1 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123CA45C2763D83800E647C1 /* Session.swift */; };
 		12C83B7B2769098C0093EC66 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C83B7A2769098C0093EC66 /* FriendsViewController.swift */; };
@@ -33,6 +39,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12208A0A276CFD4C00175109 /* StorageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageViewController.swift; sourceTree = "<group>"; };
+		12208A36276D07DE00175109 /* humandb.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = humandb.xcdatamodel; sourceTree = "<group>"; };
+		12208A38276D088400175109 /* Human+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Human+CoreDataClass.swift"; sourceTree = "<group>"; };
+		12208A39276D088400175109 /* Human+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Human+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		123CA3F2275FD15300E647C1 /* client-server-1788.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "client-server-1788.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		123CA3F5275FD15300E647C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		123CA3F7275FD15300E647C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,18 +72,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12208A0E276CFF7E00175109 /* Alamofire in Frameworks */,
 				12C83B9627691B530093EC66 /* SwiftyJSON in Frameworks */,
+				12208A11276D00A000175109 /* SwiftKeychainWrapper in Frameworks */,
+				12208A3E276D0BE800175109 /* RealmSwift in Frameworks */,
 				12C83B8B2769155E0093EC66 /* SDWebImage in Frameworks */,
-				123CA4572763CEA200E647C1 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12208A09276CFD2E00175109 /* Lesson-4 */ = {
+			isa = PBXGroup;
+			children = (
+				12208A0A276CFD4C00175109 /* StorageViewController.swift */,
+			);
+			path = "Lesson-4";
+			sourceTree = "<group>";
+		};
 		123CA3E9275FD15300E647C1 = {
 			isa = PBXGroup;
 			children = (
+				12208A38276D088400175109 /* Human+CoreDataClass.swift */,
+				12208A39276D088400175109 /* Human+CoreDataProperties.swift */,
 				123CA3F4275FD15300E647C1 /* client-server-1788 */,
 				123CA3F3275FD15300E647C1 /* Products */,
 			);
@@ -101,6 +123,7 @@
 		123CA409275FD16200E647C1 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				12208A35276D07DE00175109 /* humandb.xcdatamodeld */,
 				123CA3F5275FD15300E647C1 /* AppDelegate.swift */,
 				123CA3F7275FD15300E647C1 /* SceneDelegate.swift */,
 			);
@@ -110,6 +133,7 @@
 		123CA40A275FD17000E647C1 /* client-server */ = {
 			isa = PBXGroup;
 			children = (
+				12208A09276CFD2E00175109 /* Lesson-4 */,
 				123CA4522763C45100E647C1 /* Lesson-2 */,
 				123CA40C275FD1FD00E647C1 /* Lesson-1 */,
 			);
@@ -253,9 +277,11 @@
 			);
 			name = "client-server-1788";
 			packageProductDependencies = (
-				123CA4562763CEA200E647C1 /* Alamofire */,
 				12C83B8A2769155E0093EC66 /* SDWebImage */,
 				12C83B9527691B530093EC66 /* SwiftyJSON */,
+				12208A0D276CFF7E00175109 /* Alamofire */,
+				12208A10276D00A000175109 /* SwiftKeychainWrapper */,
+				12208A3D276D0BE800175109 /* RealmSwift */,
 			);
 			productName = "client-server-1788";
 			productReference = 123CA3F2275FD15300E647C1 /* client-server-1788.app */;
@@ -286,9 +312,11 @@
 			);
 			mainGroup = 123CA3E9275FD15300E647C1;
 			packageReferences = (
-				123CA4552763CEA200E647C1 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				12C83B892769155E0093EC66 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				12C83B9427691B530093EC66 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				12208A0C276CFF7E00175109 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				12208A0F276D00A000175109 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+				12208A3C276D0BE800175109 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 123CA3F3275FD15300E647C1 /* Products */;
 			projectDirPath = "";
@@ -319,12 +347,16 @@
 			files = (
 				12C83B8E276916720093EC66 /* FriendsDB.swift in Sources */,
 				123CA412275FE12700E647C1 /* ContactsViewController.swift in Sources */,
+				12208A37276D07DE00175109 /* humandb.xcdatamodeld in Sources */,
 				12C83B9327691A6F0093EC66 /* FriendDTO.swift in Sources */,
 				12C83B88276912640093EC66 /* Friend.swift in Sources */,
 				12C83B91276918370093EC66 /* FriendManual.swift in Sources */,
 				12C83B7F276909B50093EC66 /* PhotosViewController.swift in Sources */,
 				123CA4542763C57C00E647C1 /* NetworkingViewController.swift in Sources */,
+				12208A3B276D088400175109 /* Human+CoreDataProperties.swift in Sources */,
 				123CA3FA275FD15300E647C1 /* SendCashViewController.swift in Sources */,
+				12208A3A276D088400175109 /* Human+CoreDataClass.swift in Sources */,
+				12208A0B276CFD4C00175109 /* StorageViewController.swift in Sources */,
 				12C83B8227690AD20093EC66 /* FriendsAPI.swift in Sources */,
 				123CA40E275FD21300E647C1 /* Account.swift in Sources */,
 				123CA45A2763D27A00E647C1 /* AuthViewController.swift in Sources */,
@@ -555,12 +587,28 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		123CA4552763CEA200E647C1 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		12208A0C276CFF7E00175109 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.4.4;
+				minimumVersion = 5.5.0;
+			};
+		};
+		12208A0F276D00A000175109 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
+		12208A3C276D0BE800175109 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.20.1;
 			};
 		};
 		12C83B892769155E0093EC66 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
@@ -582,10 +630,20 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		123CA4562763CEA200E647C1 /* Alamofire */ = {
+		12208A0D276CFF7E00175109 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 123CA4552763CEA200E647C1 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = 12208A0C276CFF7E00175109 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		12208A10276D00A000175109 /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 12208A0F276D00A000175109 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+		12208A3D276D0BE800175109 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 12208A3C276D0BE800175109 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
 		};
 		12C83B8A2769155E0093EC66 /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -598,6 +656,19 @@
 			productName = SwiftyJSON;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		12208A35276D07DE00175109 /* humandb.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				12208A36276D07DE00175109 /* humandb.xcdatamodel */,
+			);
+			currentVersion = 12208A36276D07DE00175109 /* humandb.xcdatamodel */;
+			path = humandb.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 123CA3EA275FD15300E647C1 /* Project object */;
 }

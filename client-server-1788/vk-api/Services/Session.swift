@@ -6,12 +6,30 @@
 //
 
 import Foundation
+import SwiftKeychainWrapper
 
 final class Session {
     private init() {}
     
     static let shared = Session()
     
-    var token = ""
-    var userId = ""
+    var token: String {
+        set {
+            KeychainWrapper.standard.set(newValue, forKey: "com.gb.token")
+        }
+        get {
+            return KeychainWrapper.standard.string(forKey: "com.gb.token") ?? ""
+        }
+    }
+    
+    var userId: Int {
+        set {
+            UserDefaults.standard.set(newValue, forKey: "userId")
+        }
+        get {
+            return UserDefaults.standard.integer(forKey: "userId")
+        }
+    }
+    
+    var expiresIn = ""
 }

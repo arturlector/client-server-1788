@@ -14,7 +14,7 @@ import SwiftyJSON
 final class FriendsAPI {
     
     let baseUrl = "https://api.vk.com/method"
-    let userId =  Session.shared.userId
+    let userId =  String(Session.shared.userId) ?? ""
     let accessToken = Session.shared.token
     let version = "5.131"
     
