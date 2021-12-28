@@ -91,7 +91,7 @@ final class FriendsAPI {
         }
     }
     
-    func getFriends3(completion: @escaping([FriendDTO])->()) {
+    func getFriends3(completion: @escaping([FriendDAO])->()) {
         
         let path = "/friends.get"
         let url = baseUrl + path
@@ -112,7 +112,7 @@ final class FriendsAPI {
             
             do {
                 let itemsData = try JSON(jsonData)["response"]["items"].rawData()
-                let friends = try JSONDecoder().decode([FriendDTO].self, from: itemsData)
+                let friends = try JSONDecoder().decode([FriendDAO].self, from: itemsData)
                 completion(friends)
             } catch {
                 print(error)
