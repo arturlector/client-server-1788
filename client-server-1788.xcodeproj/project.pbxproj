@@ -13,7 +13,6 @@
 		12208A37276D07DE00175109 /* humandb.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 12208A35276D07DE00175109 /* humandb.xcdatamodeld */; };
 		12208A3A276D088400175109 /* Human+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12208A38276D088400175109 /* Human+CoreDataClass.swift */; };
 		12208A3B276D088400175109 /* Human+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12208A39276D088400175109 /* Human+CoreDataProperties.swift */; };
-		12208A3E276D0BE800175109 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 12208A3D276D0BE800175109 /* RealmSwift */; };
 		123CA3F6275FD15300E647C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123CA3F5275FD15300E647C1 /* AppDelegate.swift */; };
 		123CA3F8275FD15300E647C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123CA3F7275FD15300E647C1 /* SceneDelegate.swift */; };
 		123CA3FA275FD15300E647C1 /* SendCashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123CA3F9275FD15300E647C1 /* SendCashViewController.swift */; };
@@ -26,15 +25,16 @@
 		123CA4542763C57C00E647C1 /* NetworkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123CA4532763C57C00E647C1 /* NetworkingViewController.swift */; };
 		123CA45A2763D27A00E647C1 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123CA4592763D27A00E647C1 /* AuthViewController.swift */; };
 		123CA45D2763D83800E647C1 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123CA45C2763D83800E647C1 /* Session.swift */; };
+		124FF46627763A9200D31C26 /* RealmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124FF46527763A9200D31C26 /* RealmViewController.swift */; };
+		124FF468277641C800D31C26 /* FriendsDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124FF467277641C800D31C26 /* FriendsDB.swift */; };
+		124FF46B277648AE00D31C26 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 124FF46A277648AE00D31C26 /* RealmSwift */; };
 		12C83B7B2769098C0093EC66 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C83B7A2769098C0093EC66 /* FriendsViewController.swift */; };
 		12C83B7F276909B50093EC66 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C83B7E276909B50093EC66 /* PhotosViewController.swift */; };
 		12C83B8227690AD20093EC66 /* FriendsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C83B8127690AD20093EC66 /* FriendsAPI.swift */; };
 		12C83B85276911130093EC66 /* Data+PrettyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C83B84276911130093EC66 /* Data+PrettyJSON.swift */; };
 		12C83B88276912640093EC66 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C83B87276912640093EC66 /* Friend.swift */; };
 		12C83B8B2769155E0093EC66 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 12C83B8A2769155E0093EC66 /* SDWebImage */; };
-		12C83B8E276916720093EC66 /* FriendsDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C83B8D276916720093EC66 /* FriendsDB.swift */; };
 		12C83B91276918370093EC66 /* FriendManual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C83B90276918370093EC66 /* FriendManual.swift */; };
-		12C83B9327691A6F0093EC66 /* FriendDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C83B9227691A6E0093EC66 /* FriendDTO.swift */; };
 		12C83B9627691B530093EC66 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 12C83B9527691B530093EC66 /* SwiftyJSON */; };
 /* End PBXBuildFile section */
 
@@ -57,14 +57,14 @@
 		123CA4532763C57C00E647C1 /* NetworkingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingViewController.swift; sourceTree = "<group>"; };
 		123CA4592763D27A00E647C1 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		123CA45C2763D83800E647C1 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		124FF46527763A9200D31C26 /* RealmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmViewController.swift; sourceTree = "<group>"; };
+		124FF467277641C800D31C26 /* FriendsDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsDB.swift; sourceTree = "<group>"; };
 		12C83B7A2769098C0093EC66 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		12C83B7E276909B50093EC66 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		12C83B8127690AD20093EC66 /* FriendsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsAPI.swift; sourceTree = "<group>"; };
 		12C83B84276911130093EC66 /* Data+PrettyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+PrettyJSON.swift"; sourceTree = "<group>"; };
 		12C83B87276912640093EC66 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
-		12C83B8D276916720093EC66 /* FriendsDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsDB.swift; sourceTree = "<group>"; };
 		12C83B90276918370093EC66 /* FriendManual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendManual.swift; sourceTree = "<group>"; };
-		12C83B9227691A6E0093EC66 /* FriendDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,7 @@
 				12208A0E276CFF7E00175109 /* Alamofire in Frameworks */,
 				12C83B9627691B530093EC66 /* SwiftyJSON in Frameworks */,
 				12208A11276D00A000175109 /* SwiftKeychainWrapper in Frameworks */,
-				12208A3E276D0BE800175109 /* RealmSwift in Frameworks */,
+				124FF46B277648AE00D31C26 /* RealmSwift in Frameworks */,
 				12C83B8B2769155E0093EC66 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,6 +133,7 @@
 		123CA40A275FD17000E647C1 /* client-server */ = {
 			isa = PBXGroup;
 			children = (
+				124FF46427763A6B00D31C26 /* Lesson-6 */,
 				12208A09276CFD2E00175109 /* Lesson-4 */,
 				123CA4522763C45100E647C1 /* Lesson-2 */,
 				123CA40C275FD1FD00E647C1 /* Lesson-1 */,
@@ -200,6 +201,14 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
+		124FF46427763A6B00D31C26 /* Lesson-6 */ = {
+			isa = PBXGroup;
+			children = (
+				124FF46527763A9200D31C26 /* RealmViewController.swift */,
+			);
+			path = "Lesson-6";
+			sourceTree = "<group>";
+		};
 		12C83B7C276909980093EC66 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,7 +247,6 @@
 			children = (
 				12C83B87276912640093EC66 /* Friend.swift */,
 				12C83B90276918370093EC66 /* FriendManual.swift */,
-				12C83B9227691A6E0093EC66 /* FriendDTO.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -254,7 +262,7 @@
 		12C83B8F276916760093EC66 /* Database */ = {
 			isa = PBXGroup;
 			children = (
-				12C83B8D276916720093EC66 /* FriendsDB.swift */,
+				124FF467277641C800D31C26 /* FriendsDB.swift */,
 			);
 			name = Database;
 			path = API;
@@ -281,7 +289,7 @@
 				12C83B9527691B530093EC66 /* SwiftyJSON */,
 				12208A0D276CFF7E00175109 /* Alamofire */,
 				12208A10276D00A000175109 /* SwiftKeychainWrapper */,
-				12208A3D276D0BE800175109 /* RealmSwift */,
+				124FF46A277648AE00D31C26 /* RealmSwift */,
 			);
 			productName = "client-server-1788";
 			productReference = 123CA3F2275FD15300E647C1 /* client-server-1788.app */;
@@ -316,7 +324,7 @@
 				12C83B9427691B530093EC66 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				12208A0C276CFF7E00175109 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				12208A0F276D00A000175109 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
-				12208A3C276D0BE800175109 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				124FF469277648AE00D31C26 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 123CA3F3275FD15300E647C1 /* Products */;
 			projectDirPath = "";
@@ -345,10 +353,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12C83B8E276916720093EC66 /* FriendsDB.swift in Sources */,
 				123CA412275FE12700E647C1 /* ContactsViewController.swift in Sources */,
 				12208A37276D07DE00175109 /* humandb.xcdatamodeld in Sources */,
-				12C83B9327691A6F0093EC66 /* FriendDTO.swift in Sources */,
 				12C83B88276912640093EC66 /* Friend.swift in Sources */,
 				12C83B91276918370093EC66 /* FriendManual.swift in Sources */,
 				12C83B7F276909B50093EC66 /* PhotosViewController.swift in Sources */,
@@ -357,9 +363,11 @@
 				123CA3FA275FD15300E647C1 /* SendCashViewController.swift in Sources */,
 				12208A3A276D088400175109 /* Human+CoreDataClass.swift in Sources */,
 				12208A0B276CFD4C00175109 /* StorageViewController.swift in Sources */,
+				124FF46627763A9200D31C26 /* RealmViewController.swift in Sources */,
 				12C83B8227690AD20093EC66 /* FriendsAPI.swift in Sources */,
 				123CA40E275FD21300E647C1 /* Account.swift in Sources */,
 				123CA45A2763D27A00E647C1 /* AuthViewController.swift in Sources */,
+				124FF468277641C800D31C26 /* FriendsDB.swift in Sources */,
 				123CA410275FD64A00E647C1 /* DetailCashViewController.swift in Sources */,
 				12C83B7B2769098C0093EC66 /* FriendsViewController.swift in Sources */,
 				123CA3F6275FD15300E647C1 /* AppDelegate.swift in Sources */,
@@ -603,12 +611,12 @@
 				minimumVersion = 4.0.1;
 			};
 		};
-		12208A3C276D0BE800175109 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+		124FF469277648AE00D31C26 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 10.20.1;
+				minimumVersion = 10.20.2;
 			};
 		};
 		12C83B892769155E0093EC66 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
@@ -640,9 +648,9 @@
 			package = 12208A0F276D00A000175109 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
 			productName = SwiftKeychainWrapper;
 		};
-		12208A3D276D0BE800175109 /* RealmSwift */ = {
+		124FF46A277648AE00D31C26 /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 12208A3C276D0BE800175109 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			package = 124FF469277648AE00D31C26 /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
 		};
 		12C83B8A2769155E0093EC66 /* SDWebImage */ = {

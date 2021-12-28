@@ -20,9 +20,9 @@ class AuthViewController: UIViewController, WKNavigationDelegate {
         super.viewDidLoad()
         
         //TODO: - Текущую сравнить с датой в expiresIn
-        if !Session.shared.token.isEmpty, Session.shared.userId > 0 {
-            performSegue(withIdentifier: "showTabBarSegue", sender: nil)
-        }
+//        if !Session.shared.token.isEmpty, Session.shared.userId > 0 {
+//            performSegue(withIdentifier: "showTabBarSegue", sender: nil)
+//        }
         
         authorizeToVK()
     }
@@ -84,8 +84,4 @@ class AuthViewController: UIViewController, WKNavigationDelegate {
         decisionHandler(.cancel)
     }
     
-    
-
-   
-
 }
