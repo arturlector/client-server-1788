@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		120CB000278F49AB002D1ED3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 120CAFFF278F49AB002D1ED3 /* GoogleService-Info.plist */; };
+		120CB003278F4ABD002D1ED3 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 120CB002278F4ABD002D1ED3 /* FirebaseAuth */; };
+		120CB005278F4ABD002D1ED3 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 120CB004278F4ABD002D1ED3 /* FirebaseDatabase */; };
+		120CB008278F4C95002D1ED3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120CB007278F4C95002D1ED3 /* LoginViewController.swift */; };
+		120CB00A278F4CA9002D1ED3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120CB009278F4CA9002D1ED3 /* HomeViewController.swift */; };
+		120CB00C278F54C9002D1ED3 /* CityFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120CB00B278F54C9002D1ED3 /* CityFirebase.swift */; };
 		12208A0B276CFD4C00175109 /* StorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12208A0A276CFD4C00175109 /* StorageViewController.swift */; };
 		12208A0E276CFF7E00175109 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 12208A0D276CFF7E00175109 /* Alamofire */; };
 		12208A11276D00A000175109 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 12208A10276D00A000175109 /* SwiftKeychainWrapper */; };
@@ -39,6 +45,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		120CAFFF278F49AB002D1ED3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		120CB007278F4C95002D1ED3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		120CB009278F4CA9002D1ED3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		120CB00B278F54C9002D1ED3 /* CityFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityFirebase.swift; sourceTree = "<group>"; };
 		12208A0A276CFD4C00175109 /* StorageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageViewController.swift; sourceTree = "<group>"; };
 		12208A36276D07DE00175109 /* humandb.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = humandb.xcdatamodel; sourceTree = "<group>"; };
 		12208A38276D088400175109 /* Human+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Human+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -73,9 +83,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				12208A0E276CFF7E00175109 /* Alamofire in Frameworks */,
+				120CB003278F4ABD002D1ED3 /* FirebaseAuth in Frameworks */,
 				12C83B9627691B530093EC66 /* SwiftyJSON in Frameworks */,
 				12208A11276D00A000175109 /* SwiftKeychainWrapper in Frameworks */,
 				124FF46B277648AE00D31C26 /* RealmSwift in Frameworks */,
+				120CB005278F4ABD002D1ED3 /* FirebaseDatabase in Frameworks */,
 				12C83B8B2769155E0093EC66 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,6 +95,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		120CB006278F4C72002D1ED3 /* Lesson-8 */ = {
+			isa = PBXGroup;
+			children = (
+				120CB007278F4C95002D1ED3 /* LoginViewController.swift */,
+				120CB009278F4CA9002D1ED3 /* HomeViewController.swift */,
+				120CB00B278F54C9002D1ED3 /* CityFirebase.swift */,
+			);
+			path = "Lesson-8";
+			sourceTree = "<group>";
+		};
 		12208A09276CFD2E00175109 /* Lesson-4 */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +155,7 @@
 		123CA40A275FD17000E647C1 /* client-server */ = {
 			isa = PBXGroup;
 			children = (
+				120CB006278F4C72002D1ED3 /* Lesson-8 */,
 				124FF46427763A6B00D31C26 /* Lesson-6 */,
 				12208A09276CFD2E00175109 /* Lesson-4 */,
 				123CA4522763C45100E647C1 /* Lesson-2 */,
@@ -144,6 +167,7 @@
 		123CA40B275FD18100E647C1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				120CAFFF278F49AB002D1ED3 /* GoogleService-Info.plist */,
 				123CA3FB275FD15300E647C1 /* Main.storyboard */,
 				123CA3FE275FD15500E647C1 /* Assets.xcassets */,
 				123CA400275FD15500E647C1 /* LaunchScreen.storyboard */,
@@ -290,6 +314,8 @@
 				12208A0D276CFF7E00175109 /* Alamofire */,
 				12208A10276D00A000175109 /* SwiftKeychainWrapper */,
 				124FF46A277648AE00D31C26 /* RealmSwift */,
+				120CB002278F4ABD002D1ED3 /* FirebaseAuth */,
+				120CB004278F4ABD002D1ED3 /* FirebaseDatabase */,
 			);
 			productName = "client-server-1788";
 			productReference = 123CA3F2275FD15300E647C1 /* client-server-1788.app */;
@@ -325,6 +351,7 @@
 				12208A0C276CFF7E00175109 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				12208A0F276D00A000175109 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
 				124FF469277648AE00D31C26 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				120CB001278F4ABD002D1ED3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 123CA3F3275FD15300E647C1 /* Products */;
 			projectDirPath = "";
@@ -341,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				123CA402275FD15500E647C1 /* LaunchScreen.storyboard in Resources */,
+				120CB000278F49AB002D1ED3 /* GoogleService-Info.plist in Resources */,
 				123CA3FF275FD15500E647C1 /* Assets.xcassets in Resources */,
 				123CA3FD275FD15300E647C1 /* Main.storyboard in Resources */,
 			);
@@ -359,13 +387,16 @@
 				12C83B91276918370093EC66 /* FriendManual.swift in Sources */,
 				12C83B7F276909B50093EC66 /* PhotosViewController.swift in Sources */,
 				123CA4542763C57C00E647C1 /* NetworkingViewController.swift in Sources */,
+				120CB00A278F4CA9002D1ED3 /* HomeViewController.swift in Sources */,
 				12208A3B276D088400175109 /* Human+CoreDataProperties.swift in Sources */,
 				123CA3FA275FD15300E647C1 /* SendCashViewController.swift in Sources */,
 				12208A3A276D088400175109 /* Human+CoreDataClass.swift in Sources */,
 				12208A0B276CFD4C00175109 /* StorageViewController.swift in Sources */,
+				120CB008278F4C95002D1ED3 /* LoginViewController.swift in Sources */,
 				124FF46627763A9200D31C26 /* RealmViewController.swift in Sources */,
 				12C83B8227690AD20093EC66 /* FriendsAPI.swift in Sources */,
 				123CA40E275FD21300E647C1 /* Account.swift in Sources */,
+				120CB00C278F54C9002D1ED3 /* CityFirebase.swift in Sources */,
 				123CA45A2763D27A00E647C1 /* AuthViewController.swift in Sources */,
 				124FF468277641C800D31C26 /* FriendsDB.swift in Sources */,
 				123CA410275FD64A00E647C1 /* DetailCashViewController.swift in Sources */,
@@ -595,6 +626,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		120CB001278F4ABD002D1ED3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
 		12208A0C276CFF7E00175109 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -638,6 +677,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		120CB002278F4ABD002D1ED3 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 120CB001278F4ABD002D1ED3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		120CB004278F4ABD002D1ED3 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 120CB001278F4ABD002D1ED3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
 		12208A0D276CFF7E00175109 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 12208A0C276CFF7E00175109 /* XCRemoteSwiftPackageReference "Alamofire" */;
